@@ -1,13 +1,18 @@
 import React, { Component } from "react";
-
-// import '../styles/App.css';
+import Header from "./header";
+import Top from "./top-block";
+import Logo from "./logo";
 
 class App extends Component {
     render() {
         return (
-            <div>
-                <h1>My React App!</h1>
-            </div>
+            <div className = 'mainblock'>  
+                <div className = 'header'>  
+                <Logo />               
+                <Header />
+                </div>
+                <Top />                
+            </div>            
         );
     }
 }

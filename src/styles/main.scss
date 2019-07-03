@@ -1,3 +1,46 @@
-h1 {
-    color: greenyellow;
+body {
+    max-width: 1170px;
+    min-width: 320px;
+    background: lightgray;
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+$purple_color: #8239c2;
+
+.header {
+    background: $purple_color;
+    color: white;
+    display: flex;
+    justify-content: space-around;           
+    .logo {
+        font-size: 1em;
+        font-weight: bold;
+    } 
+    .menu {    
+        display: flex;
+        justify-content: space-around; 
+        font-size: 0.7em;      
+        .menuItem {            
+            margin-right: 3em;
+            &:hover {
+                color: red;
+            }
+        }        
+        .menuBtn {
+            background: $purple_color;
+            border: 2px solid white;
+            color: white;
+            border-radius: 3.5em; 
+            width: 12em;   
+            height: 2.2em;
+            font-size: 0.7em;            
+            margin-right: 2em; 
+            margin-top: 1.5%; 
+            &:hover {
+                color: red;
+            }     
+        }
+    }
 }
