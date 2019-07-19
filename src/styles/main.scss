@@ -9,55 +9,57 @@ body {
 
 $purple_color: #9440e9;
 $top_color: white;
-.header {
-    background: $purple_color;
-    color: $top_color;
-    display: flex;
-    justify-content: space-around;           
-    .logo {
-        font-size: 1em;
-        font-weight: bold;
-    } 
-    .menu {    
-        display: flex;
-        justify-content: space-around; 
-        font-size: 0.7em;      
-        .menuItem {            
-            margin-right: 3em;
-            &:hover {
-                color: red;
-            }
-        }        
-        .menuBtn {
-            background: $purple_color;
-            border: 2px solid $top_color;
-            color: $top_color;
-            border-radius: 3.5em; 
-            width: 12em;   
-            height: 2.2em;
-            font-size: 0.7em;            
-            margin-right: 2em; 
-            margin-top: 1.5%; 
-            &:hover {
-                color: red;
-            }     
-        }
-    }
-}
-.top {
+.header-top{
     background: url('../assets/Фигура\ 1@1X.png') no-repeat;
     background-position: 20% 10%;
     background-size: auto;
-    display: flex;
-    .top-img {
-        background: url('../assets/Иллюстрация@1X.png') no-repeat;
-        background-size: contain;
-        width: 500px;
-        height: 500px;        
-        }
-    .top-text {
+    .header-menu {        
         color: $top_color;
-        font-size: 2em;
+        display: flex;
+        justify-content: space-around;           
+        .logo {
+            font-size: 1em;
+            font-weight: bold;
+        } 
+        .menu {    
+            display: flex;
+            justify-content: space-around; 
+            font-size: 0.7em;      
+            .menuItem {            
+                margin-right: 3em;
+                &:hover {
+                    color: red;
+                }
+            }        
+            .menuBtn {
+                background: $purple_color;
+                border: 2px solid $top_color;
+                color: $top_color;
+                border-radius: 3.5em; 
+                width: 12em;   
+                height: 2.2em;
+                font-size: 0.7em;            
+                margin-right: 2em; 
+                margin-top: 1.5%; 
+                &:hover {
+                    color: red;
+                }     
+            }
+        }
+        
     }
-    
+    .top {    
+        display: flex;
+        .top-img {
+            background: url('../assets/Иллюстрация@1X.png') no-repeat;
+            background-size: contain;
+            width: 500px;
+            height: 500px;        
+            }
+        .top-text {
+            color: $top_color;
+            font-size: 2em;
+        }
+        
+    }
 }

@@ -6,12 +6,12 @@ import Logo from "./logo";
 class App extends Component {
     render() {
         return (
-            <div className = 'mainblock'>  
-                <div className = 'header'>  
+            <div className = 'header-top'>  
+                <div className = 'header-menu'>  
                 <Logo />               
-                <Header />
-                </div>
-                <Top />                
+                <Header />                
+                </div> 
+                <Top />                               
             </div>            
         );
     }
