@@ -6,9 +6,7 @@ class Top extends Component {
             <div className='top'>
                 <div className='top-img'></div>
                 <div className='top-text'> 
-                <p>РАЗМЕР</p>
-                <p>ИМЕЕТ</p>
-                <p>ЗНАЧЕНИЯ!</p>
+                <h2>РАЗМЕР ИМЕЕТ ЗНАЧЕНИЯ!</h2>                
                 <p>Оперативная полиграфия  и широкоформатная печать любого размера</p>
                 <div className='top-btn-block'>
                     <button className='btn'>ЗАКАЗАТЬ ПЕЧАТЬ</button>

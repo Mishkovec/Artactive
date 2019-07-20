@@ -2,13 +2,24 @@ body {
     max-width: 1170px;
     min-width: 320px;
     background: lightgray;
-    overflow: hidden;
+    overflow-x: hidden;
+    margin-top: 0;
+    padding: 0;
     margin-left: auto;
     margin-right: auto;
 }
 
-$purple_color: #9440e9;
+$purple_color: #7F38BD;
 $top_color: white;
+$btn_color: #FB0275;
+$width_item: 40%;
+
+@mixin flexible () {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
 .header-top{
     background: url('../assets/Фигура\ 1@1X.png') no-repeat;
     background-position: 20% 10%;
@@ -49,17 +60,72 @@ $top_color: white;
         
     }
     .top {    
-        display: flex;
+        @include flexible ();
         .top-img {
             background: url('../assets/Иллюстрация@1X.png') no-repeat;
-            background-size: contain;
-            width: 500px;
-            height: 500px;        
+            background-size: contain;            
+            width: $width_item;
+            height: 25em;                    
             }
         .top-text {
-            color: $top_color;
-            font-size: 2em;
+            color: $top_color;            
+            width: $width_item; 
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            h2 {
+                font-size: 2.5em;
+            }
+            .top-btn-block {                
+                p {
+                    font-size: 0.6em;
+                }
+            }
         }
         
     }
+}
+.btn {
+    background-color: $btn_color;
+    color: $top_color;
+    border-radius: 3em;
+    font-size: 0.7em;
+    font-weight: bold;
+    height: 2.5em;
+    border: none;  
+    text-transform: uppercase;  
+}
+.first_block {
+    display: flex;
+    flex-direction: column;    
+    .about_us_common {
+        @include flexible ();
+        background: white;
+        .pic_block {
+            width: $width_item; 
+        }
+        .about_us {
+            width: $width_item;
+            h2 {
+                color: $purple_color;
+            }
+        }
+    }
+    .service_block {
+        @include flexible ();
+        background: #FAF8FB;
+        .service{
+            width: $width_item;
+            h2 {
+                color: $purple_color;
+            }
+            .service_btn_block {
+                background-color: $purple_color;
+            }
+        } 
+        .service_slider {
+            width: $width_item;
+        }       
+    }
+    
 }
