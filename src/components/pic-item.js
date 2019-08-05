@@ -4,7 +4,9 @@ class PicItem extends Component {
     render() {
         return (            
             <div className = "picItem" >
-            <div className = 'pic_img'></div>
+            <div className = 'pic_img'>
+                <img className='img' src= {this.props.img} /> 
+            </div>
             <p>{this.props.picItem}</p>
             </div>           
         );

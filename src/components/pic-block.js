@@ -6,10 +6,10 @@ class Pic extends Component {
 		super();		
 		this.state = {
             picItem: [
-                {content: 'Приём и детальное обсуждение заказа'},
-                {content: 'Создание и согласование дизайн-макета'},
-                {content: 'Печать и постпечатная обработка изделий любых размеров'},
-                {content: 'Доставка готовой продукции'},                
+                {content: 'Приём и детальное обсуждение заказа', img: '/src/assets/ebook@1X.png'},
+                {content: 'Создание и согласование дизайн-макета', img: '/src/assets/tablet@1X.png'},
+                {content: 'Печать и постпечатная обработка изделий любых размеров', img: '/src/assets/writer@1X.png'},
+                {content: 'Доставка готовой продукции', img: '/src/assets/moving@1X.png'},                
             ] 			
         };
     }   
@@ -17,7 +17,8 @@ class Pic extends Component {
         const picItems = this.state.picItem.map((item, index) => {
 			return <PicItem
 				key={index}
-				picItem={item.content}				
+                picItem={item.content}
+                img={item.img}				
 			/>;
 		});
         return ( 

@@ -6,8 +6,8 @@ class Service extends Component {
             <div className = 'service_block'>
                 <div className = 'service'>
                     <h2>2. Услуги </h2>
-                    <p> Широкоформатная печать 
-баннеров, растяжек, афиш</p>
+                    <p className='point_name'> Широкоформатная печать 
+                        баннеров, растяжек, афиш</p>
                     <ul>
                         <li>подготовка макетов к печати, дизайн рекламных баннеров</li>
                         <li>срочная печать за 3 часа</li>
@@ -17,13 +17,15 @@ class Service extends Component {
                         <li>доставка баннеров</li>
                     </ul>
                     <div className = 'service_btn_block'>
-                        <p>Есть вопросы?</p>
-                        <p>Закажите консультацию</p>
+                        <div className ='service_btn_text'>
+                            <i>Есть вопросы?</i>
+                            <p>Закажите консультацию</p>
+                        </div>
                         <button className = 'btn'>Заказать</button>
                     </div>
                 </div>
                 <div className = 'service_slider'>
-                    slider
+                    <div className = 'slider_image'></div>
                 </div>
             </div>
         );

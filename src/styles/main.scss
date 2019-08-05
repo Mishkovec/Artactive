@@ -19,7 +19,11 @@ $width_item: 40%;
     justify-content: center;
     align-items: center;
   }
-
+h2 {
+    color: $purple_color;
+    margin: 0;
+    padding-top: 5%;
+}
 .header-top{
     background: url('../assets/Фигура\ 1@1X.png') no-repeat;
     background-position: 20% 10%;
@@ -75,6 +79,7 @@ $width_item: 40%;
             justify-content: center;
             h2 {
                 font-size: 2.5em;
+                color: white;
             }
             .top-btn-block {                
                 p {
@@ -89,12 +94,18 @@ $width_item: 40%;
     background-color: $btn_color;
     color: $top_color;
     border-radius: 3em;
-    font-size: 0.7em;
+    font-size: 0.8em;
+    width: 40%;
     font-weight: bold;
     height: 2.5em;
     border: none;  
     text-transform: uppercase;  
 }
+.point_name {
+    color: black;
+    font-size: 1.8em;
+    font-weight: bold;
+} 
 .first_block {
     display: flex;
     flex-direction: column;    
@@ -102,30 +113,252 @@ $width_item: 40%;
         @include flexible ();
         background: white;
         .pic_block {
+            display: flex;
+            flex-wrap: wrap;
             width: $width_item; 
+            .picItem {
+                @include flexible();
+                flex-direction: column;
+                padding: 5%;
+                width: $width_item;
+                .pic_img {
+                    width: 5em;
+                    height: 5em;
+                    background-color: #F0E2FF;
+                    border: none;
+                    border-radius: 50%;
+                    @include flexible();                    
+                }
+                p {
+                    text-align: center;
+                }
+            }
         }
         .about_us {
-            width: $width_item;
-            h2 {
-                color: $purple_color;
-            }
+            width: $width_item;                       
         }
     }
     .service_block {
         @include flexible ();
         background: #FAF8FB;
-        .service{
-            width: $width_item;
-            h2 {
-                color: $purple_color;
-            }
+        .service {
+            width: $width_item;                      
             .service_btn_block {
+                @include flexible();
+                justify-content: space-around;
+                border: none;
+                border-radius: 1em;
+                color: white;
+                margin-top: 15%;
+                margin-bottom: 10%;
                 background-color: $purple_color;
+                .service_btn_text {
+                    font-size: 0.8em;
+                    padding: 5%;
+                    p { 
+                        margin: 0;
+                        font-size: 1.4em;
+                        font-weight: bold;
+                    }
+                }
+                .btn {                    
+                    width: 30%;
+                }
             }
         } 
         .service_slider {
             width: $width_item;
+            // @include flexible ();
+            .slider_image {                
+                width: 90%;
+                height: 25em;
+                background: url('../assets/Слой\ 5@1X.png') no-repeat;
+                background-size: contain;
+                transform: translate(20%, 10%);
+
+            }
         }       
     }
     
+}
+.second_block {
+    @include flexible ();
+    background:white;
+    .second_block_image {
+        background: url('../assets/Диван@1X.png') no-repeat;
+        background-size: contain;
+        width: $width_item *3;
+        height: 25em;
+    }
+    .second_block_info {
+        width: $width_item;
+        position: relative;
+        top: -1em;
+        left: -5em;
+        .btn {            
+            width: 60%;
+        }
+    }
+}
+.third_block {
+    @include flexible ();
+    flex-wrap: wrap;
+    background: #FAF8FB;
+    .third_block_info {
+        width: $width_item;
+    }
+    .third_block_image {
+        width: $width_item;
+        height: 25em;
+        background: url('../assets/Фирстиль@1X.png') no-repeat;
+        background-size: contain;
+    }
+    .third_block_form {
+        font-size: 0.8em;
+        margin-top: 3%;
+        width: $width_item *2;        
+        p {
+            margin: 0;
+            margin-top: 1%;
+            font-size: 1.3em;
+            font-weight: bold;
+        }
+        .third_form {
+            width: $width_item +10;
+            margin-top: 1%;
+            margin-bottom: 5%;
+            display: flex;
+            justify-content: space-between;
+            input {
+                margin-right: 5%;
+                padding-left: 2%;
+                border: none;
+                border-bottom: 1px solid $purple_color;
+                background: transparent;
+            }
+            .btn {
+                font-size: 0.85em;
+                width: 25%;
+            }
+        }
+    }
+}
+.rewiews { 
+    padding: 3% 0;   
+    background-color: white;
+    h2 {
+        padding: 0;
+        margin-left: 10%;
+    }
+    .slider {
+        @include flexible();
+        .rewiew1 {
+            @include flexible();
+            justify-content: space-between;
+            width: $width_item;
+            .rewiew1_photo {
+                width: $width_item /2;
+                height: 5em;
+                background: url('../assets/Слой\ 13@1X.png') no-repeat;
+                background-size: contain;
+            }
+        }
+        .rewiew2 {
+            @include flexible();
+            justify-content: space-between;
+            width: $width_item;
+            .rewiew2_photo {
+                width: $width_item /2;
+                height: 5em;
+                background: url('../assets/Слой\ 14@1X.png') no-repeat;
+                background-size: contain;
+            }
+        }
+        .rewiew_info {
+            width: $width_item *2;
+            .rewiew_text {
+                font-size: 0.9em;
+            }
+            .rewiew_name {
+                font-weight: bold;
+            }
+            .rewiew_nets {
+                color: blue;
+            }
+        }
+    }
+}
+.faq {
+    width: 100%;
+    padding-bottom: 5%;
+    background-color: #FAF8FB;
+    h2 {
+        margin-left: 10%;
+    }
+    .questions {
+        @include flexible();
+        flex-wrap: wrap;
+        .faq_block {
+            width: $width_item;
+            .faq_block_question {
+                font-weight: bold;
+            }
+        }
+    }
+    .faq_form {
+        width: $width_item *2;
+        padding: 2%;
+        margin-top: 3%;
+        margin-left: 10%;
+        border: none;
+        border-radius: 1em;
+        background-color: $purple_color;
+        color: white;
+        p {
+            margin: 0;
+        }
+        .last_form {
+            width: $width_item *2;
+            display: flex;
+            justify-content: space-between;
+            input {
+                width: 35%;
+                padding-left: 2%;
+                border: none;
+                color: white;
+                border-bottom: 1px solid white;
+                background: transparent;
+            }
+            .btn {
+                width: 20%;
+            }
+        }
+    }
+}
+.footer {
+    width: 100%;
+    height: 25em;  
+    @include flexible(); 
+    justify-content: flex-start;    
+    flex-direction: column;    
+    background: url('../assets/Слой\ 15@1X.png') no-repeat; 
+    background-size: cover;   
+    .contacts {  
+        align-self: flex-start;      
+        width: $width_item -5;
+        margin-top: 5%;
+        margin-left: 10%;
+        padding: 5%;
+        background-color: white;
+    }
+    .footer_info {
+        display: flex;
+        justify-self: flex-end;
+        justify-content: space-around;
+        margin-top: 5%;
+        width: 100%;
+        color: white; 
+        font-size: 0.8em;
+        background-color: $purple_color;
+    }
 }
