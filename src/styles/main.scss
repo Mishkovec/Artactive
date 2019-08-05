@@ -127,7 +127,30 @@ h2 {
                     background-color: #F0E2FF;
                     border: none;
                     border-radius: 50%;
-                    @include flexible();                    
+                    // @include flexible(); 
+                    .id1, .id2, .id3, .id4 {
+                        width:90%;
+                        height: 90%;                                                
+                        background-size: contain;
+                        // transform: translate(20%, 10%);
+                    } 
+                    .id1{
+                        background: url('../assets/ebook@1X.png') no-repeat;
+                        transform: translate(18%, 23%);
+                    } 
+                    .id2{
+                        background: url('../assets/tablet@1X.png') no-repeat;
+                        transform: translate(10%, 10%);
+                    }
+                    .id3{
+                        background: url('../assets/writer@1X.png') no-repeat;
+                        transform: translate(18%, 23%);
+                    }
+                    .id4{
+                        background: url('../assets/moving@1X.png') no-repeat;
+                        transform: translate(10%, 27%);
+                    }
+                                     
                 }
                 p {
                     text-align: center;

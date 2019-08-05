@@ -106,10 +106,23 @@ h2 {
           height: 5em;
           background-color: #F0E2FF;
           border: none;
-          border-radius: 50%;
-          display: flex;
-          justify-content: center;
-          align-items: center; }
+          border-radius: 50%; }
+          .first_block .about_us_common .pic_block .picItem .pic_img .id1, .first_block .about_us_common .pic_block .picItem .pic_img .id2, .first_block .about_us_common .pic_block .picItem .pic_img .id3, .first_block .about_us_common .pic_block .picItem .pic_img .id4 {
+            width: 90%;
+            height: 90%;
+            background-size: contain; }
+          .first_block .about_us_common .pic_block .picItem .pic_img .id1 {
+            background: url(36c57d0ddc2e220cce363f8c35d053ae.png) no-repeat;
+            transform: translate(18%, 23%); }
+          .first_block .about_us_common .pic_block .picItem .pic_img .id2 {
+            background: url(ec68909d7a6ff7688bdd701adbdeaf82.png) no-repeat;
+            transform: translate(10%, 10%); }
+          .first_block .about_us_common .pic_block .picItem .pic_img .id3 {
+            background: url(fbe5fb5cdbfdb89c99c82c652c4d07b1.png) no-repeat;
+            transform: translate(18%, 23%); }
+          .first_block .about_us_common .pic_block .picItem .pic_img .id4 {
+            background: url(b6296df463e65e28750f16e5134a4838.png) no-repeat;
+            transform: translate(10%, 27%); }
         .first_block .about_us_common .pic_block .picItem p {
           text-align: center; }
     .first_block .about_us_common .about_us {
