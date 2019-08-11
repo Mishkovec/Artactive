@@ -8,6 +8,7 @@ import Third_block from "./third-block";
 import Rewiews from "./rewiews";
 import FAQ from "./faq";
 import Footer from "./footer";
+import FooterInfo from "./footer-info";
 
 class App extends Component {
     render() {
@@ -24,7 +25,8 @@ class App extends Component {
             <Third_block /> 
             <Rewiews />
             <FAQ />  
-            <Footer />   
+            <Footer /> 
+            <FooterInfo />
         </div>) 
     }
 }

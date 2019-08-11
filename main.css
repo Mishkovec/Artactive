@@ -321,13 +321,78 @@ h2 {
     margin-left: 10%;
     padding: 5%;
     background-color: white; }
-  .footer .footer_info {
-    display: flex;
-    justify-self: flex-end;
-    justify-content: space-around;
-    margin-top: 5%;
-    width: 100%;
-    color: white;
-    font-size: 0.8em;
-    background-color: #7F38BD; }
+
+.footer_info {
+  display: flex;
+  justify-self: flex-end;
+  justify-content: space-around;
+  width: 100%;
+  color: white;
+  font-size: 0.8em;
+  background-color: #7F38BD; }
+
+@media only screen and (max-width: 768px) {
+  .header-top .header-menu {
+    justify-content: flex-start; }
+    .header-top .header-menu .logo {
+      margin-left: 5%; }
+    .header-top .header-menu .menu {
+      display: none; }
+  .header-top .top .top-img {
+    display: none; }
+  .header-top .top .top-text {
+    width: 80%;
+    align-items: center; }
+    .header-top .top .top-text .top-btn-block {
+      width: 90%; }
+  .first_block .about_us_common {
+    flex-direction: column-reverse; }
+    .first_block .about_us_common .about_us, .first_block .about_us_common .pic_block {
+      width: 80%; }
+  .first_block .service_block {
+    flex-direction: column; }
+    .first_block .service_block .service, .first_block .service_block .service_slider {
+      width: 80%; }
+    .first_block .service_block .service_slider .slider_image {
+      transform: none; }
+  .second_block {
+    flex-direction: column-reverse; }
+    .second_block .second_block_info {
+      width: 80%;
+      left: 0; }
+  .third_block {
+    flex-direction: column; }
+    .third_block .third_block_info, .third_block .third_block_image, .third_block .third_block_form {
+      width: 80%; }
+    .third_block .third_block_form .third_form {
+      width: 100%;
+      flex-direction: column;
+      align-items: center; }
+      .third_block .third_block_form .third_form input {
+        margin-bottom: 5%;
+        width: 100%; }
+      .third_block .third_block_form .third_form .btn {
+        width: 50%; }
+  .rewiews .slider {
+    flex-direction: column; }
+    .rewiews .slider .rewiew1, .rewiews .slider .rewiew2 {
+      width: 80%; }
+  .faq .questions {
+    flex-direction: column; }
+    .faq .questions .faq_block {
+      width: 80%; }
+  .faq .faq_form .last_form {
+    flex-direction: column;
+    align-items: center;
+    width: 100%; }
+    .faq .faq_form .last_form input {
+      width: 100%;
+      margin-bottom: 5%; }
+    .faq .faq_form .last_form .btn {
+      width: 50%; } }
+
+@media only screen and (max-width: 480px) {
+  .footer_info {
+    flex-direction: column;
+    align-items: center; } }
 
