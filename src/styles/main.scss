@@ -439,6 +439,9 @@ h2 {
             width: $width_item *2;
             left: 0;
         }
+        .second_block_image {
+            width: 100%;
+        }
     }
     .third_block {
         flex-direction: column;

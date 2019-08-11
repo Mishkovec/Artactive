@@ -360,6 +360,8 @@ h2 {
     .second_block .second_block_info {
       width: 80%;
       left: 0; }
+    .second_block .second_block_image {
+      width: 100%; }
   .third_block {
     flex-direction: column; }
     .third_block .third_block_info, .third_block .third_block_image, .third_block .third_block_form {
